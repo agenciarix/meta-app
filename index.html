@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>App Agência Rix | Integração Meta</title>
   <meta name="description" content="Ferramenta interna da Agência Rix para gerenciar publicações e campanhas no Meta (Facebook e Instagram)." />
 
@@ -13,7 +12,7 @@
   <meta property="og:site_name" content="Agência Rix" />
   <meta property="og:title" content="App Agência Rix | Integração Meta" />
   <meta property="og:description" content="Ferramenta interna da Agência Rix para gerenciar publicações e campanhas no Meta (Facebook e Instagram)." />
-  <meta property="og:url" content="https://agenciarix.com.br/meta-app" />
+  <meta property="og:url" content="https://agenciarix.com/meta-app" />
   <meta property="og:image" content="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68f9613884152d491a4c4bd9/74457f9c0_RIXNEGATIVO.png" />
 
   <!-- Twitter Card -->
@@ -32,17 +31,61 @@
       justify-content: center;
       min-height: 100vh;
       flex-direction: column;
-      gap: 16px;
+      padding: 40px;
+      text-align: center;
     }
-    img { width: 160px; }
-    p { color: #aaa; font-size: 14px; }
+    img { width: 160px; margin-bottom: 24px; }
+    .card {
+      max-width: 720px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+    }
+    h1 { margin-bottom: 12px; }
+    .section {
+      text-align: left;
+      margin-top: 24px;
+      color: #D1D5DB;
+    }
+    a.button {
+      margin-top: 16px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #00b4d8;
+      color: #0a0a0a;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
-  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68f9613884152d491a4c4bd9/74457f9c0_RIXNEGATIVO.png" alt="Agência Rix" />
-  <p>Redirecionando...</p>
-  <script>
-    window.location.replace("https://agenciarix.com.br/meta-app");
-  </script>
+  <div class="card">
+    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68f9613884152d491a4c4bd9/74457f9c0_RIXNEGATIVO.png" alt="Agência Rix" />
+    <h1>Aplicativo Agência Rix — Integração Meta</h1>
+    <p>Este aplicativo conecta o painel interno da Agência Rix ao Meta Business Suite para publicar conteúdo, monitorar campanhas e responder interações das páginas sob nossa gestão contratual.</p>
+
+    <div class="section">
+      <h3>Principais funcionalidades:</h3>
+      <ul>
+        <li>Agendamento e publicação de posts em páginas/Instagram dos clientes.</li>
+        <li>Coleta de métricas básicas (alcance, engajamento, desempenho de anúncios).</li>
+        <li>Resposta a mensagens/comentários (quando autorizado).</li>
+        <li>Relatórios e painéis de controle para o time interno.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Acesso para testes:</h3>
+      <p>O aplicativo é restrito ao uso interno. Caso um analista do Meta precise testar, solicite credenciais demo enviando um e-mail para <strong>meta-review@agenciarix.com</strong>.</p>
+    </div>
+
+    <div class="section">
+      <h3>Política de privacidade:</h3>
+      <p>Nossa política está disponível em <a href="https://agenciarix.com/politica-de-privacidade" target="_blank">https://agenciarix.com/politica-de-privacidade</a>.</p>
+    </div>
+  </div>
 </body>
 </html>
